@@ -20,4 +20,15 @@ Which is then split into patches for training:
 |<img width="512" src="https://github.com/kheyer/MarsGAN/blob/master/media/ESP_011472_1225_3_0.jpg">  |  <img width="512" src="https://github.com/kheyer/MarsGAN/blob/master/media/ESP_011472_1225_4_0.jpg">|<img width="512" src="https://github.com/kheyer/MarsGAN/blob/master/media/ESP_011472_1225_5_0.jpg">|
 |<img width="512" src="https://github.com/kheyer/MarsGAN/blob/master/media/ESP_011472_1225_6_0.jpg">  |  <img width="512" src="https://github.com/kheyer/MarsGAN/blob/master/media/ESP_011472_1225_7_0.jpg">|<img width="512" src="https://github.com/kheyer/MarsGAN/blob/master/media/ESP_011472_1225_8_0.jpg">|
 
+## Basic GAN
 
+The first model we train is detailed in the `Basic GAN` notebook. The model is an extremely simple Wasserstein GAN that uses transposed convolutions in the generator to create a 64x64 image. See the notebook for model architecture and training details. This model works as a proof of concept, but the generated images aren't great. For example:
+
+![](https://github.com/kheyer/MarsGAN/blob/master/media/basic_gan.png)
+
+Clearly the model has captured features of the dataset, such as color and some surface textures. There are also lots of artifacts.
+The images are stuck at a low resolution (64x64), as training becomes unstable at higher resolutions. To create better images, we need a more sophistocated model and training proces.
+
+## StyleGAN
+
+Coming soon, as quickly as my GPU can process this extremely slow model.
