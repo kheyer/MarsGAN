@@ -31,4 +31,10 @@ The images are stuck at a low resolution (64x64), as training becomes unstable a
 
 ## StyleGAN
 
-Coming soon, as quickly as my GPU can process this extremely slow model.
+We can generate higher quality images using a StyleGAN, a more modern GAN architecture. Details of the StyleGAN model and the training process can be found in the [StyleGAN Training Notebook](https://github.com/kheyer/MarsGAN/blob/master/StyleGAN.ipynb).
+
+These are images that we can create with a StyleGAN:
+
+![](https://github.com/kheyer/MarsGAN/blob/master/media/Mars_StyleGAN.png)
+
+Compared to the basic GAN, StyleGAN can produce higher quality images with fewer artifacts at larger sizes without having issues training.
